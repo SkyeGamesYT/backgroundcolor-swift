@@ -1,26 +1,27 @@
-//
-//  ContentView.swift
-//  bgcolor(Swift)
-//
-//  Created by Gaskell, Roydon (514077) on 3/10/23.
-//
+//Copyright 2023 SkyeGamesYT
+//MIT License
 
-import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+
+import UIKit
+
+func randomColor() -> UIColor {
+    let red = CGFloat(arc4random_uniform(256)) / 255.0
+    let green = CGFloat(arc4random_uniform(256)) / 255.0
+    let blue = CGFloat(arc4random_uniform(256)) / 255.0
+
+    return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
 }
+let imageArray = [UIImage(named: "image1"), UIImage(named: "image2"), UIImage(named: "image3")]
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+func randomImage() -> UIImage? {
+    let randomIndex = Int(arc4random_uniform(UInt32(imageArray.count)))
+    return imageArray[randomIndex]
+    
+    
+    
+    
+    //Then make a button, and put:
+    //
+}    //  self.view.backgroundColor = randomColor()
+//Thats it!
