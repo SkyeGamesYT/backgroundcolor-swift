@@ -1,8 +1,6 @@
 //
 //  bgcolor_Swift_App.swift
-//  bgcolor(Swift)
-//
-//  Created by Gaskell, Roydon (514077) on 3/10/23.
+
 //
 
 import SwiftUI
